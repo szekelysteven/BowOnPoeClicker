@@ -23,11 +23,11 @@ When ready to upload changes:
 
 •	Save and Close out of unity.
 
-•	Inside of GitHub desktop, create a summary and description, make sure all changes are checked
+•	Inside of GitHub desktop, create a summary and description, make sure all changes are checked. Make folders like Library are not added.
 
 •	Click commit to master.
 
-•	Click push to fully upload to repository.
+•	Click push to fully upload to repository. 
 
 Be sure to fetch origin before starting any work for the day so that you don’t rollback anyone’s stuff. I think the desktop app should be able to catch this.
 
