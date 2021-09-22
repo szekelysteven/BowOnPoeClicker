@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
     public void ChangeDirection()
     {
         //Switches enemy movement direction by updating with new random direction
-        Debug.Log("Switch Triggered");
+        
         velocity = new Vector2 (Random.Range(-1f, 1f),Random.Range(-1f, 1f));
     }
 
