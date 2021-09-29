@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - MathScript
+  - Donator1
+  - Donator2
+  - Donator3
+  - Building1
+  - Building2
+  - Building3
   layers:
   - Default
   - TransparentFX

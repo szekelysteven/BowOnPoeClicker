@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.387896
+  orthographic size: 17.228561
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -223,19 +223,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3821428797238709367, guid: 1dfdaf042bb15044cac0b83853380555, type: 3}
       propertyPath: m_LocalScale.x
-      value: 32.31784
+      value: 75.188324
       objectReference: {fileID: 0}
     - target: {fileID: 3821428797238709367, guid: 1dfdaf042bb15044cac0b83853380555, type: 3}
       propertyPath: m_LocalScale.y
-      value: 14.640111
+      value: 34.785336
       objectReference: {fileID: 0}
     - target: {fileID: 3821428797238709367, guid: 1dfdaf042bb15044cac0b83853380555, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0707
+      value: -0.106
       objectReference: {fileID: 0}
     - target: {fileID: 3821428797238709367, guid: 1dfdaf042bb15044cac0b83853380555, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0944
+      value: 0.022
       objectReference: {fileID: 0}
     - target: {fileID: 3821428797238709367, guid: 1dfdaf042bb15044cac0b83853380555, type: 3}
       propertyPath: m_LocalPosition.z
@@ -338,6 +338,50 @@ PrefabInstance:
     - target: {fileID: 6458857112428128239, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
       propertyPath: m_Name
       value: MathScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: totalMoney
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: donator1Value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: donator2Value
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: donator3Value
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: building1Level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: building1SpawnRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: building2SpawnRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: building3SpawnRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: Building1UpgradeCost
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: Building2UpgradeCost
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363695731712114358, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
+      propertyPath: Building3UpgradeCost
+      value: 200000
       objectReference: {fileID: 0}
     - target: {fileID: 8952974524569851769, guid: b1ce152c66203da48bf4926127c9d2d2, type: 3}
       propertyPath: m_RootOrder

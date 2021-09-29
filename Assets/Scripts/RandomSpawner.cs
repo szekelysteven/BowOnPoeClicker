@@ -7,7 +7,6 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     public Transform prefab;
-    public float SpawnRate;
     //SpawnX and SpawnY are the boundries of the spawner.
     [Tooltip("Min and Max X Values")]
     public float SpawnX;
@@ -23,7 +22,7 @@ public class RandomSpawner : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         Timer();
     }
 
@@ -32,10 +31,38 @@ public class RandomSpawner : MonoBehaviour
         //increases time
         currentTime += Time.deltaTime;
         //checks if spawnrate time has passed
-        if (oldTime <= (currentTime - SpawnRate))
+        if (this.tag == "Building1")
         {
-            oldTime = currentTime;
-            Spawn();
+            if (oldTime <= (currentTime - GameObject.Find("MathScript").GetComponent<MathScript>().building1SpawnRate))
+            {
+                oldTime = currentTime;
+                if (GameObject.Find("MathScript").GetComponent<MathScript>().building1SpawnRate > 0)
+                {
+                    Spawn();
+                }
+            }
+        }
+        if (this.tag == "Building2")
+        {
+            if (oldTime <= (currentTime - GameObject.Find("MathScript").GetComponent<MathScript>().building2SpawnRate))
+            {
+                oldTime = currentTime;
+                if (GameObject.Find("MathScript").GetComponent<MathScript>().building2SpawnRate > 0)
+                {
+                    Spawn();
+                }
+            }
+        }
+        if (this.tag == "Building3")
+        {
+            if (oldTime <= (currentTime - GameObject.Find("MathScript").GetComponent<MathScript>().building3SpawnRate))
+            {
+                oldTime = currentTime;
+                if (GameObject.Find("MathScript").GetComponent<MathScript>().building3SpawnRate > 0)
+                {
+                    Spawn();
+                }
+            }
         }
     }
 

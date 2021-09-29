@@ -5,15 +5,47 @@ using UnityEngine;
 public class DestroyObject : MonoBehaviour
 {
     
-    public float value;
+    private float value;
+    private float donatorMultiplier;
+    private float donatorValue;
     // Start is called before the first frame update
+
+
+
+    void Update()
+    {
+        Calculate();
+    }
   
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
-        GameObject.Find("MathScript").GetComponent<MathScript>().TotalMoney += value;
+        //Updates public variable total money before object is destroyed.
+        GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
         Destroy(gameObject);
     }
 
+    //This will assign and update a donator value as buildings are leveled up.
+    public void Calculate()
+    {
+        if (this.tag == "Donator1")
+        {
+            donatorMultiplier = GameObject.Find("MathScript").GetComponent<MathScript>().donator1Multiplier;
+            value = GameObject.Find("MathScript").GetComponent<MathScript>().donator1Value;
+            value = value * donatorMultiplier;
+        }
+        if (this.tag == "Donator2")
+        {
+            donatorMultiplier = GameObject.Find("MathScript").GetComponent<MathScript>().donator2Multiplier;
+            value = GameObject.Find("MathScript").GetComponent<MathScript>().donator2Value;
+            value = value * donatorMultiplier;
+        }
+        if (this.tag == "Donator3")
+        {
+            donatorMultiplier = GameObject.Find("MathScript").GetComponent<MathScript>().donator3Multiplier;
+            value = GameObject.Find("MathScript").GetComponent<MathScript>().donator3Value;
+            value = value * donatorMultiplier;
+        }
+    }
 
 }
