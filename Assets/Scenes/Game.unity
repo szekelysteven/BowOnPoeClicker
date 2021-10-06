@@ -154,7 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 1652668938}
-  clickValue: 0
+  money: 0
+  clickValue: 200
 --- !u!4 &74332433
 Transform:
   m_ObjectHideFlags: 0
