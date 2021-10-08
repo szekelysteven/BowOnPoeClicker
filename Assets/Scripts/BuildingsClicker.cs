@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BuildingsClicker : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class BuildingsClicker : MonoBehaviour
     private float building1Level;
     private float building2Level;
     private float building3Level;
+
+    public TMP_Text moneyCount;
+    public TMP_Text upgradeCostb1;
+    public TMP_Text upgradeCostb2;
+    public TMP_Text upgradeCostb3;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +43,11 @@ public class BuildingsClicker : MonoBehaviour
         building1Level = GameObject.Find("MathScript").GetComponent<MathScript>().building1Level;
         building2Level = GameObject.Find("MathScript").GetComponent<MathScript>().building2Level;
         building3Level = GameObject.Find("MathScript").GetComponent<MathScript>().building3Level;
+
+        moneyCount.SetText("$ " + totalMoney);
+        upgradeCostb1.SetText("$ " + building1UpgradeCost);
+        upgradeCostb2.SetText("$ " + building2UpgradeCost);
+        upgradeCostb3.SetText("$ " + building3UpgradeCost);
     }
 
     void OnMouseDown()

@@ -3,17 +3,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 
 public class MathScript : MonoBehaviour
 {
     //We want buildings to have three levels each. The levels will affect how fast that building produces units
     //and increases donator values from the building.
     public float totalMoney = 0;
-    public TMP_Text moneyCount;
-    public TMP_Text upgradeCostb1;
-    public TMP_Text upgradeCostb2;
-    public TMP_Text upgradeCostb3;
+
     //Sets initial building costs for buildings at level 1.
     public float building1UpgradeCost = 2000;
     public float building2UpgradeCost = 4000;
@@ -46,12 +43,9 @@ public class MathScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {       
         Debug.Log(totalMoney);
-        moneyCount.SetText("$ " + totalMoney);
-        upgradeCostb1.SetText("$ " + building1UpgradeCost);
-        upgradeCostb2.SetText("$ " + building2UpgradeCost);
-        upgradeCostb3.SetText("$ " + building3UpgradeCost);
+
     }
 
  

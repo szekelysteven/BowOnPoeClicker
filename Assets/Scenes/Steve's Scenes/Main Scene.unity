@@ -681,29 +681,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 385876346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92edee5b821f1a7418645a652232eaa7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8779a159fbb30b6449d6833bebbeb994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalMoney: 0
   moneyCount: {fileID: 53094135}
   upgradeCostb1: {fileID: 616923377}
   upgradeCostb2: {fileID: 0}
   upgradeCostb3: {fileID: 0}
-  building1UpgradeCost: 2000
-  building2UpgradeCost: 4000
-  building3UpgradeCost: 8000
-  donator1Multiplier: 1
-  donator2Multiplier: 1
-  donator3Multiplier: 1
-  donator1Value: 0
-  donator2Value: 0
-  donator3Value: 0
-  building1Level: 0
-  building2Level: 0
-  building3Level: 0
-  building1SpawnRate: 0
-  building2SpawnRate: 0
-  building3SpawnRate: 0
 --- !u!1 &448521792
 GameObject:
   m_ObjectHideFlags: 0
