@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1445190641848551672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.29, y: -3.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcf81e32676ffb4282490f5e137046d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_Speed: 1
+  enemy_Speed: 3
 --- !u!58 &448971726578128514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5cae3b9670a7cb42afb6e017508e5a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 25
 --- !u!58 &983794577081001406
 CircleCollider2D:
   m_ObjectHideFlags: 0

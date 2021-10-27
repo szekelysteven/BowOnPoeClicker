@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
         rb2D = gameObject.AddComponent<Rigidbody2D>();
         //Sets a new random direction for enemy to travel to.
         velocity = new Vector2 (Random.Range(-1f, 1f),  Random.Range(-1f, 1f));
-        enemy_Speed = Random.Range(1f, 2f);
+        enemy_Speed = Random.Range(2f, 5f);
     }
 
     // Update is called once per frame, fixedupdate is used to coordinate with physics engine.
