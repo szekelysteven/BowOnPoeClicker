@@ -24,10 +24,12 @@ public class BuildingsClicker : MonoBehaviour
     public TMP_Text upgradeCostb1;
     public TMP_Text upgradeCostb2;
     public TMP_Text upgradeCostb3;
+
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class BuildingsClicker : MonoBehaviour
                 GameObject.Find("MathScript").GetComponent<MathScript>().building1Level++;
                 GameObject.Find("MathScript").GetComponent<MathScript>().building1SpawnRate /= 2;
                 GameObject.Find("MathScript").GetComponent<MathScript>().donator1Multiplier *= 2;
-
+                audioSource.Play();
             }
         }
         if (this.tag == "Building2")
@@ -81,6 +83,7 @@ public class BuildingsClicker : MonoBehaviour
                 GameObject.Find("MathScript").GetComponent<MathScript>().building2Level++;
                 GameObject.Find("MathScript").GetComponent<MathScript>().building2SpawnRate /= 2;
                 GameObject.Find("MathScript").GetComponent<MathScript>().donator2Multiplier *= 2;
+                audioSource.Play();
             }
         }
         if (this.tag == "Building3")
@@ -98,6 +101,7 @@ public class BuildingsClicker : MonoBehaviour
                 GameObject.Find("MathScript").GetComponent<MathScript>().building3Level++;
                 GameObject.Find("MathScript").GetComponent<MathScript>().building3SpawnRate /= 2;
                 GameObject.Find("MathScript").GetComponent<MathScript>().donator3Multiplier *= 2;
+                audioSource.Play();
             }
         }
     }

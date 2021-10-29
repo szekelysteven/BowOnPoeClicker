@@ -10,6 +10,7 @@ public class DestroyObject : MonoBehaviour
     private float donatorValue;
     // Start is called before the first frame update
 
+    private AudioSource audioSource;
 
 
     void Update()
@@ -22,7 +23,9 @@ public class DestroyObject : MonoBehaviour
     {
         //Updates public variable total money before object is destroyed.
         GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
-        Destroy(gameObject);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+        Destroy(gameObject, .5f);
     }
 
     //This will assign and update a donator value as buildings are leveled up.
