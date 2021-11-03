@@ -11,7 +11,7 @@ public class DestroyObject : MonoBehaviour
     // Start is called before the first frame update
 
     private AudioSource audioSource;
-
+    public Transform prefab;
 
     void Update()
     {
@@ -23,9 +23,8 @@ public class DestroyObject : MonoBehaviour
     {
         //Updates public variable total money before object is destroyed.
         GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
-        Destroy(gameObject, .5f);
+        Instantiate(prefab, transform.position + new Vector3(), Quaternion.identity);
+        Destroy(gameObject);
     }
 
     //This will assign and update a donator value as buildings are leveled up.

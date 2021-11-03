@@ -11,6 +11,8 @@ TagManager:
   - Building1
   - Building2
   - Building3
+  - Audio1
+  - Audio2
   layers:
   - Default
   - TransparentFX
