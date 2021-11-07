@@ -21,10 +21,12 @@ public class DestroyObject : MonoBehaviour
 
     void OnMouseOver()
     {
-        //Updates public variable total money before object is destroyed.
-        GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
-        Instantiate(prefab, transform.position + new Vector3(), Quaternion.identity);
-        Destroy(gameObject);
+        if (Time.timeScale == 1){
+            //Updates public variable total money before object is destroyed.
+            GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
+            Instantiate(prefab, transform.position + new Vector3(), Quaternion.identity);
+            Destroy(gameObject);
+        }      
     }
 
     //This will assign and update a donator value as buildings are leveled up.

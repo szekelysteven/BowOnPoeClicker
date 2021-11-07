@@ -17,12 +17,16 @@ public class menuScript : MonoBehaviour
     {        
         gameCanvas.SetActive(false);
         menuCanvas.SetActive(true);
+        Time.timeScale = 0;
+        Debug.Log("paused");
     }
 
     public void Play()
     {
         menuCanvas.SetActive(false);
         gameCanvas.SetActive(true);
+        Time.timeScale = 1;
+        Debug.Log("resumed");
     }
 
     public void enterSettings()
