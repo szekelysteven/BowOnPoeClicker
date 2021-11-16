@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class ButtonScript : MonoBehaviour
     int b1;
     int b2;
     int b3;
+    public int totalLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,7 @@ public class ButtonScript : MonoBehaviour
         b1 = 1;
         b2 = 0;
         b3 = 0;
+        totalLevel = 1;
         leveloneText.text = b1.ToString();
         leveltwoText.text = b2.ToString();
         levelthreeText.text = b3.ToString();
@@ -58,6 +61,7 @@ public class ButtonScript : MonoBehaviour
         upgradeCostb2.SetText("$ " + building2UpgradeCost);
         upgradeCostb3.SetText("$ " + building3UpgradeCost);
 
+        EndGame();
     }
     public void OnPressBuildingOne()
     {
@@ -71,6 +75,8 @@ public class ButtonScript : MonoBehaviour
             audioSource.Play();
             b1 = b1 + 1;
             leveloneText.text = b1.ToString();
+            totalLevel = totalLevel + 1;
+            EndGame();
         }
     }
     public void OnPressBuildingTwo()
@@ -90,6 +96,8 @@ public class ButtonScript : MonoBehaviour
             audioSource.Play();
             b2 = b2 + 1;
             leveltwoText.text = b2.ToString();
+            totalLevel = totalLevel + 1;
+            EndGame();
         }
     }
     public void OnPressBuildingThree()
@@ -109,7 +117,15 @@ public class ButtonScript : MonoBehaviour
             audioSource.Play();
             b3 = b3 + 1;
             levelthreeText.text = b3.ToString();
-
+            totalLevel = totalLevel + 1;
+            EndGame();
+        }
+    }
+    public void EndGame()
+    {
+        if (totalLevel == 9)
+        {
+            SceneManager.LoadScene("Win Screen");
         }
     }
 }

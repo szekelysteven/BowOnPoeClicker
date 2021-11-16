@@ -24,7 +24,6 @@ public class DestroyObject : MonoBehaviour
         if (Time.timeScale == 1){
             //Updates public variable total money before object is destroyed.
             GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney += value;
-            Instantiate(prefab, transform.position + new Vector3(), Quaternion.identity);
             Destroy(gameObject);
         }      
     }
