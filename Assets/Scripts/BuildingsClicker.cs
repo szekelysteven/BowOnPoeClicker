@@ -20,6 +20,10 @@ public class BuildingsClicker : MonoBehaviour
     private float building2Level;
     private float building3Level;
 
+
+
+
+
     public TMP_Text moneyCount;
     public TMP_Text upgradeCostb1;
     public TMP_Text upgradeCostb2;
@@ -35,6 +39,10 @@ public class BuildingsClicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //update scales
+
+       
         //update to keep totalmoney, building upgrade costs, and building levels in sync with math script global variables.
         totalMoney = GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney;
         
@@ -60,6 +68,8 @@ public class BuildingsClicker : MonoBehaviour
             //Checks that the player has enough money for upgrade and isnt already level 3
             if ((totalMoney >= building1UpgradeCost) && building1Level < 3)
             {
+                
+                
                 GameObject.Find("MathScript").GetComponent<MathScript>().totalMoney -= building1UpgradeCost;
                 GameObject.Find("MathScript").GetComponent<MathScript>().building1UpgradeCost += building1UpgradeCost;
                 GameObject.Find("MathScript").GetComponent<MathScript>().building1Level++;

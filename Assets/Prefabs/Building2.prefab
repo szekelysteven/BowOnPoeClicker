@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3178630540731959308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.86, y: 3.6, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.1162, y: 2.0673, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7878309246658395094, guid: 220b1ff57c36f8641bef1ea560698670, type: 3}
-  SpawnX: 2
-  SpawnY: 2
+  SpawnX: 1.1
+  SpawnY: 1.1
 --- !u!82 &7794729011719629035
 AudioSource:
   m_ObjectHideFlags: 0

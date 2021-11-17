@@ -44,7 +44,7 @@ public class MathScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        Debug.Log(totalMoney);
+        //Debug.Log(totalMoney);
 
     }
 
