@@ -8,9 +8,21 @@ public class Settings : MonoBehaviour
     public bool isFullScreen = true;
     public AudioMixer audioMixer;
 
-    public void SetVolume(float volume)
+    public void SetVolume(float sliderValue)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("totalVolume", Mathf.Log10 (sliderValue)*20); //converts our slider value to a logarithmic scale
+    }
+
+    public void muteToggle(bool muted)
+    {
+        if (muted)
+        {
+            AudioListener.volume = 0;
+        }
+        else
+        {
+            AudioListener.volume = 1;
+        }
     }
 
     public void SetQuality (int qualityIndex)
