@@ -68,7 +68,7 @@ public class RandomSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(prefab, transform.position + new Vector3(Random.Range(-SpawnX, SpawnX), Random.Range(-SpawnY, SpawnY)), Quaternion.identity);
+        Instantiate(prefab, transform.position + new Vector3(Random.Range((-SpawnX - 2), (SpawnX + 2)), Random.Range((-SpawnY - 2), (SpawnY + 2))), Quaternion.identity);
     }
 
 }
